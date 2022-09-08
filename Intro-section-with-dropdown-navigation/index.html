@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap" rel="stylesheet">
+
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+<header>
+  <div class="navbar">
+    <img src="images/logo.svg" alt="snap" class="logo">
+    <div class="navs">
+      <div class="left-nav">      
+        <div class="nav">
+          <div class="nav-item">
+            <a href="javascript:void(0)" id="navLinkFeatures"  class="nav-link" onclick="openDropdownOne()">Features
+              <img src="images/icon-arrow-down.svg" alt="" class="fArrowdown">
+              <img src="images/icon-arrow-up.svg" alt="" class="fArrowup">
+              <div class="dropdown" id="featuresDropdown">
+                <a href="#" class="link"><img src="images/icon-todo.svg" alt="">   TodoList</a>
+                <a href="#" class="link"><img src="images/icon-calendar.svg" alt="">   Calender</a>
+                <a href="#" class="link"><img src="images/icon-reminders.svg" alt="">   Reminders</a>
+                <a href="#" class="link"><img src="images/icon-planning.svg" alt="">   Planning</a>
+              </div>
+            </a>
+          </div>
+         <div class="nav-item">
+          <a href="javascript:void(0)" id="navLinkCompany" class="nav-link" onclick="openDropdownTwo()">Company
+            <img src="images/icon-arrow-down.svg" alt="" class="cArrowdown">
+            <img src="images/icon-arrow-up.svg" alt="" class="cArrowup">
+            <div class="dropdown" id="companyDropdown">
+              <a href="" class="link">History</a>
+              <a href="" class="link">Our Team</a>
+              <a href="" class="link">Blog</a>
+            </div>
+          </a>
+         </div> 
+         <div class="nav-item">
+          <a href="#" class="nav-link">Careers</a>
+         </div>
+          <div class="nav-item">
+            <a href="#" class="nav-link">About</a>
+          </div>
+          
+          
+        </div>
+      </div>
+      <div class="right-nav">
+        <a href="#" class="nav-link">Login</a>
+        <a href="#" class="btn nav-btn">Register</a>
+      </div>
+    </div>
+<img src="images/icon-menu.svg" alt="" class="mob-menu">
+  </div>
+</header>
+<section class="hero-section">
+  <div class="container">
+    <div class="row">
+      <div class="col col-left">
+        <h1 class="hero-heading">Make remote work</h1>
+        <p class="hero-text">Get your team in sync, no matter your location. Streamline processes, 
+          create team rituals, and watch productivity soar.</p>
+          <button class="btn hero-btn">Learn more</button>
+          <div class="brands">
+            <img src="images/client-databiz.svg" alt="databiz">
+            <img src="images/client-audiophile.svg" alt="audip-phile">
+            <img src="images/client-meet.svg" alt="meet">
+            <img src="images/client-maker.svg" alt="maker">
+          </div>
+      </div>
+      <div class="col col-right">
+        <img src="images/image-hero-desktop.png" alt="" class="hero-img">
+        <img src="images/image-hero-mobile.png" alt="" class="hero-img-mob">
+      </div>
+    </div>
+  </div>
+</section>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Saan</a>.
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
